@@ -1,0 +1,577 @@
+----------------------------------------------------------------------------
+GSCALIBRATE -- Thu 17 Nov 2022 01:28:01 PM EST
+
+input        = /home/ryan/iras11506/iras11-PA158/e*.fits
+output       = 
+outpref      = c
+sfunction    = /home/ryan/iras11506/sens
+fluxscale    =   1e+15
+fl_ext       = no
+fl_flux      = yes
+fl_vardq     = no
+sci_ext      = SCI
+ignoreaps    = yes
+fl_fnu       = no
+extinction   = /home/ryan/iras11506/mkoextinct.dat
+key_airmass  = AIRMASS
+key_exptime  = EXPTIME
+observatory  = Gemini-South
+
+ERROR - GSCALIBRATE: Input image /home/ryan/iras11506/iras11-PA158/e-ap0-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image /home/ryan/iras11506/iras11-PA158/e-ap1-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image /home/ryan/iras11506/iras11-PA158/e-ap10-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image /home/ryan/iras11506/iras11-PA158/e-ap11-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image /home/ryan/iras11506/iras11-PA158/e-ap12-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image /home/ryan/iras11506/iras11-PA158/e-ap13-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image /home/ryan/iras11506/iras11-PA158/e-ap14-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image /home/ryan/iras11506/iras11-PA158/e-ap16-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image /home/ryan/iras11506/iras11-PA158/e-ap17-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image /home/ryan/iras11506/iras11-PA158/e-ap18-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image /home/ryan/iras11506/iras11-PA158/e-ap19-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image /home/ryan/iras11506/iras11-PA158/e-ap2-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image /home/ryan/iras11506/iras11-PA158/e-ap20-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image /home/ryan/iras11506/iras11-PA158/e-ap3-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image /home/ryan/iras11506/iras11-PA158/e-ap4-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image /home/ryan/iras11506/iras11-PA158/e-ap5-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image /home/ryan/iras11506/iras11-PA158/e-ap6-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image /home/ryan/iras11506/iras11-PA158/e-ap7-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image /home/ryan/iras11506/iras11-PA158/e-ap8-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image /home/ryan/iras11506/iras11-PA158/e-ap9-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: 20 error(s) found. Exiting.
+
+GSCALIBRATE done. Exit status bad. --Thu 17 Nov 2022 01:28:01 PM EST
+-------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------
+GSCALIBRATE -- Thu 17 Nov 2022 01:33:09 PM EST
+
+input        = e*.fits
+output       = 
+outpref      = c
+sfunction    = /home/ryan/iras11506/sens.fits
+fluxscale    =   1e+15
+fl_ext       = no
+fl_flux      = yes
+fl_vardq     = no
+sci_ext      = 
+ignoreaps    = yes
+fl_fnu       = no
+extinction   = /home/ryan/iras11506/mkoextinct.dat
+key_airmass  = AIRMASS
+key_exptime  = EXPTIME
+observatory  = Gemini-South
+
+ERROR - GSCALIBRATE: Input image e-ap0-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap1-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap10-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap11-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap12-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap13-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap14-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap16-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap17-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap18-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap19-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap2-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap20-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap3-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap4-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap5-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap6-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap7-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap8-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap9-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: sci_ext is an empty string.
+ERROR - GSCALIBRATE: 21 error(s) found. Exiting.
+
+GSCALIBRATE done. Exit status bad. --Thu 17 Nov 2022 01:33:09 PM EST
+-------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------
+GSCALIBRATE -- Thu 17 Nov 2022 01:33:25 PM EST
+
+input        = e*.fits
+output       = 
+outpref      = c
+sfunction    = /home/ryan/iras11506/sens.fits
+fluxscale    =   1e+15
+fl_ext       = no
+fl_flux      = yes
+fl_vardq     = no
+sci_ext      = 0
+ignoreaps    = yes
+fl_fnu       = no
+extinction   = /home/ryan/iras11506/mkoextinct.dat
+key_airmass  = AIRMASS
+key_exptime  = EXPTIME
+observatory  = Gemini-South
+
+ERROR - GSCALIBRATE: Input image e-ap0-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap1-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap10-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap11-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap12-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap13-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap14-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap16-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap17-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap18-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap19-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap2-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap20-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap3-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap4-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap5-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap6-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap7-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap8-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap9-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: 20 error(s) found. Exiting.
+
+GSCALIBRATE done. Exit status bad. --Thu 17 Nov 2022 01:33:25 PM EST
+-------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------
+GSCALIBRATE -- Thu 17 Nov 2022 01:39:29 PM EST
+
+input        = e*.fits
+output       = 
+outpref      = c
+sfunction    = /home/ryan/iras11506/sens
+fluxscale    =   1e+15
+fl_ext       = yes
+fl_flux      = yes
+fl_vardq     = no
+sci_ext      = 1
+ignoreaps    = yes
+fl_fnu       = no
+extinction   = /home/ryan/iras11506/mkoextinct.dat
+key_airmass  = AIRMASS
+key_exptime  = EXPTIME
+observatory  = Gemini-South
+
+ERROR - GSCALIBRATE: Input image e-ap0-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap1-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap10-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap11-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap12-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap13-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap14-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap16-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap17-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap18-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap19-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap2-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap20-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap3-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap4-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap5-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap6-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap7-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap8-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap9-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: 20 error(s) found. Exiting.
+
+GSCALIBRATE done. Exit status bad. --Thu 17 Nov 2022 01:39:29 PM EST
+-------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------
+GSCALIBRATE -- Thu 17 Nov 2022 01:44:38 PM EST
+
+input        = e*.fits[0]
+output       = 
+outpref      = c
+sfunction    = /home/ryan/iras11506/sens
+fluxscale    =   1e+15
+fl_ext       = yes
+fl_flux      = yes
+fl_vardq     = no
+sci_ext      = 1
+ignoreaps    = yes
+fl_fnu       = no
+extinction   = /home/ryan/iras11506/mkoextinct.dat
+key_airmass  = AIRMASS
+key_exptime  = EXPTIME
+observatory  = Gemini-South
+
+GSCALIBRATE done. Exit status good --Thu 17 Nov 2022 01:44:38 PM EST
+-------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------
+GSCALIBRATE -- Thu 17 Nov 2022 01:48:26 PM EST
+
+input        = /home/ryan/iras11506/iras11-PA158/e-ap0-iras11-158-p0.fits
+output       = 
+outpref      = c
+sfunction    = /home/ryan/iras11506/sens
+fluxscale    =   1e+15
+fl_ext       = yes
+fl_flux      = yes
+fl_vardq     = no
+sci_ext      = 1
+ignoreaps    = yes
+fl_fnu       = no
+extinction   = /home/ryan/iras11506/mkoextinct.dat
+key_airmass  = AIRMASS
+key_exptime  = EXPTIME
+observatory  = Gemini-South
+
+ERROR - GSCALIBRATE: Input image /home/ryan/iras11506/iras11-PA158/e-ap0-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: 1 error(s) found. Exiting.
+
+GSCALIBRATE done. Exit status bad. --Thu 17 Nov 2022 01:48:26 PM EST
+-------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------
+GSCALIBRATE -- Thu 17 Nov 2022 01:48:44 PM EST
+
+input        = /home/ryan/iras11506/iras11-PA158/e-ap0-iras11-158-p0.fits[0]
+output       = 
+outpref      = c
+sfunction    = /home/ryan/iras11506/sens
+fluxscale    =   1e+15
+fl_ext       = yes
+fl_flux      = yes
+fl_vardq     = no
+sci_ext      = 1
+ignoreaps    = yes
+fl_fnu       = no
+extinction   = /home/ryan/iras11506/mkoextinct.dat
+key_airmass  = AIRMASS
+key_exptime  = EXPTIME
+observatory  = Gemini-South
+
+GSCALIBRATE done. Exit status good --Thu 17 Nov 2022 01:48:44 PM EST
+-------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------
+GSCALIBRATE -- Thu 17 Nov 2022 01:50:17 PM EST
+
+input        = /home/ryan/iras11506/iras11-PA158/e-ap0-iras11-158-p0.fits[0]
+output       = e-ap0-iras11-158-p0
+outpref      = c
+sfunction    = /home/ryan/iras11506/sens
+fluxscale    =   1e+15
+fl_ext       = yes
+fl_flux      = yes
+fl_vardq     = no
+sci_ext      = SCI
+ignoreaps    = yes
+fl_fnu       = no
+extinction   = /home/ryan/iras11506/mkoextinct.dat
+key_airmass  = AIRMASS
+key_exptime  = EXPTIME
+observatory  = Gemini-South
+
+ERROR - GSCALIBRATE: Number of input and output images does not match.
+ERROR - GSCALIBRATE: Output image e-ap0-iras11-158-p0 exists.
+ERROR - GSCALIBRATE: 2 error(s) found. Exiting.
+
+GSCALIBRATE done. Exit status bad. --Thu 17 Nov 2022 01:50:17 PM EST
+-------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------
+GSCALIBRATE -- Thu 17 Nov 2022 01:51:12 PM EST
+
+input        = /home/ryan/iras11506/iras11-PA158/e-ap0-iras11-158-p0.fits[0]
+output       = ce-ap0-iras11-158-p0.fits
+outpref      = c
+sfunction    = /home/ryan/iras11506/sens
+fluxscale    =   1e+15
+fl_ext       = yes
+fl_flux      = yes
+fl_vardq     = no
+sci_ext      = SCI
+ignoreaps    = yes
+fl_fnu       = no
+extinction   = /home/ryan/iras11506/mkoextinct.dat
+key_airmass  = AIRMASS
+key_exptime  = EXPTIME
+observatory  = Gemini-South
+
+ERROR - GSCALIBRATE: Number of input and output images does not match.
+ERROR - GSCALIBRATE: 1 error(s) found. Exiting.
+
+GSCALIBRATE done. Exit status bad. --Thu 17 Nov 2022 01:51:12 PM EST
+-------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------
+GSCALIBRATE -- Thu 17 Nov 2022 01:53:48 PM EST
+
+input        = /home/ryan/iras11506/iras11-PA158/e-ap0-iras11-158-p0.fits[SCI]
+output       = ce-ap0-iras11-158-p0.fits
+outpref      = c
+sfunction    = /home/ryan/iras11506/sens
+fluxscale    =   1e+15
+fl_ext       = yes
+fl_flux      = yes
+fl_vardq     = no
+sci_ext      = SCI
+ignoreaps    = yes
+fl_fnu       = no
+extinction   = /home/ryan/iras11506/mkoextinct.dat
+key_airmass  = AIRMASS
+key_exptime  = EXPTIME
+observatory  = Gemini-South
+
+ERROR - GSCALIBRATE: Number of input and output images does not match.
+ERROR - GSCALIBRATE: 1 error(s) found. Exiting.
+
+GSCALIBRATE done. Exit status bad. --Thu 17 Nov 2022 01:53:48 PM EST
+-------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------
+GSCALIBRATE -- Thu 17 Nov 2022 01:55:44 PM EST
+
+input        = /home/ryan/iras11506/iras11-PA158/e-ap0-iras11-158-p0.fits[SCI]
+output       = 
+outpref      = c
+sfunction    = /home/ryan/iras11506/sens
+fluxscale    =   1e+15
+fl_ext       = yes
+fl_flux      = yes
+fl_vardq     = no
+sci_ext      = SCI
+ignoreaps    = yes
+fl_fnu       = no
+extinction   = /home/ryan/iras11506/mkoextinct.dat
+key_airmass  = AIRMASS
+key_exptime  = EXPTIME
+observatory  = Gemini-South
+
+GSCALIBRATE done. Exit status good --Thu 17 Nov 2022 01:55:44 PM EST
+-------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------
+GSCALIBRATE -- Thu 17 Nov 2022 04:08:33 PM EST
+
+input        = e*
+output       = 
+outpref      = c
+sfunction    = /home/ryan/iras11506/sens
+fluxscale    =   1e+15
+fl_ext       = yes
+fl_flux      = yes
+fl_vardq     = no
+sci_ext      = SCI
+ignoreaps    = yes
+fl_fnu       = no
+extinction   = /home/ryan/iras11506/mkoextinct.dat
+key_airmass  = AIRMASS
+key_exptime  = EXPTIME
+observatory  = Gemini-South
+
+ERROR - GSCALIBRATE: Input image e-ap0-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap1-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap10-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap11-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap12-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap13-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap14-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap16-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap17-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap18-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap19-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap2-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap20-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap3-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap4-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap5-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap6-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap7-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap8-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap9-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: 20 error(s) found. Exiting.
+
+GSCALIBRATE done. Exit status bad. --Thu 17 Nov 2022 04:08:33 PM EST
+-------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------
+GSCALIBRATE -- Thu 17 Nov 2022 04:09:16 PM EST
+
+input        = e*
+output       = 
+outpref      = c
+sfunction    = /home/ryan/iras11506/sens
+fluxscale    =   1e+15
+fl_ext       = yes
+fl_flux      = yes
+fl_vardq     = no
+sci_ext      = 0
+ignoreaps    = yes
+fl_fnu       = no
+extinction   = /home/ryan/iras11506/mkoextinct.dat
+key_airmass  = AIRMASS
+key_exptime  = EXPTIME
+observatory  = Gemini-South
+
+ERROR - GSCALIBRATE: Input image e-ap0-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap1-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap10-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap11-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap12-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap13-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap14-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap16-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap17-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap18-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap19-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap2-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap20-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap3-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap4-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap5-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap6-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap7-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap8-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap9-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: 20 error(s) found. Exiting.
+
+GSCALIBRATE done. Exit status bad. --Thu 17 Nov 2022 04:09:16 PM EST
+-------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------
+GSCALIBRATE -- Thu 17 Nov 2022 04:09:43 PM EST
+
+input        = e*
+output       = 
+outpref      = c
+sfunction    = /home/ryan/iras11506/sens
+fluxscale    =   1e+15
+fl_ext       = yes
+fl_flux      = yes
+fl_vardq     = no
+sci_ext      = 0
+ignoreaps    = no
+fl_fnu       = no
+extinction   = /home/ryan/iras11506/mkoextinct.dat
+key_airmass  = AIRMASS
+key_exptime  = EXPTIME
+observatory  = Gemini-South
+
+ERROR - GSCALIBRATE: Input image e-ap0-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap1-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap10-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap11-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap12-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap13-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap14-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap16-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap17-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap18-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap19-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap2-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap20-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap3-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap4-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap5-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap6-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap7-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap8-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap9-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: 20 error(s) found. Exiting.
+
+GSCALIBRATE done. Exit status bad. --Thu 17 Nov 2022 04:09:43 PM EST
+-------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------
+GSCALIBRATE -- Thu 17 Nov 2022 04:10:24 PM EST
+
+input        = e*.fits[0]
+output       = 
+outpref      = c
+sfunction    = /home/ryan/iras11506/sens
+fluxscale    =   1e+15
+fl_ext       = yes
+fl_flux      = yes
+fl_vardq     = no
+sci_ext      = 0
+ignoreaps    = no
+fl_fnu       = no
+extinction   = /home/ryan/iras11506/mkoextinct.dat
+key_airmass  = AIRMASS
+key_exptime  = EXPTIME
+observatory  = Gemini-South
+
+GSCALIBRATE done. Exit status good --Thu 17 Nov 2022 04:10:24 PM EST
+-------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------
+GSCALIBRATE -- Thu 17 Nov 2022 04:12:08 PM EST
+
+input        = e*
+output       = 
+outpref      = c
+sfunction    = sens
+fluxscale    =   1e+15
+fl_ext       = yes
+fl_flux      = yes
+fl_vardq     = no
+sci_ext      = 0
+ignoreaps    = no
+fl_fnu       = no
+extinction   = mkoextinct.dat
+key_airmass  = AIRMASS
+key_exptime  = EXPTIME
+observatory  = Gemini-South
+
+ERROR - GSCALIBRATE: Input image e-ap0-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap1-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap10-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap11-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap12-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap13-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap14-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap16-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap17-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap18-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap19-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap2-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap20-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap3-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap4-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap5-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap6-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap7-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap8-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: Input image e-ap9-iras11-158-p0.fits does not exist.
+ERROR - GSCALIBRATE: 20 error(s) found. Exiting.
+
+GSCALIBRATE done. Exit status bad. --Thu 17 Nov 2022 04:12:08 PM EST
+-------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------
+GSCALIBRATE -- Thu 17 Nov 2022 05:04:59 PM EST
+
+input        = e*.fits[1, 1]
+output       = 
+outpref      = c
+sfunction    = sens
+fluxscale    =   1e+15
+fl_ext       = yes
+fl_flux      = yes
+fl_vardq     = no
+sci_ext      = SCI
+ignoreaps    = yes
+fl_fnu       = no
+extinction   = mkoextinct.dat
+key_airmass  = AIRMASS
+key_exptime  = EXPTIME
+observatory  = Gemini-South
+
+----------------------------------------------------------------------------
+GPREPARE -- Fri 18 Nov 2022 09:15:32 AM EST
+
+Input list    = 
+Output list   = 
+Output prefix = g
+Raw path      = 
+MDF dir       = gmos$data/
+Add MDF       = no
+
+ERROR - GPREPARE: Input image  does not exist
+ERROR - GPREPARE: 1 input files do not exist, are the wrong type, or
+                  are already GPREPAREd
+
+GPREPARE exit status: error.
+----------------------------------------------------------------------------

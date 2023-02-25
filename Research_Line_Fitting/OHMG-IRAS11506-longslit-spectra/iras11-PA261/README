@@ -1,0 +1,9 @@
+Nesta pasta estão os espectros referentes a fenda próxima ao eixo maior  PA=158°
+
+A nomenclatura dos arquivos segue a seguinte lógica, arquivos com o prefixo
+
+- S = dados obtidos pelo GMOS/ original/ sem reduzir
+- stgsg = espectro reduzido, calibrado em comprimento de onda, não em fluxo, e com as linhas do céu extraídas.
+- e-ap - são os espectros extaídos e editados (sem os gaps e etc) de todas as extrações ao longo da fenda. O número 1 representa o espectro central, de 2 a 8 os espectros na direção do raio positivo e os de 9 a 14 os espectros na direção do raio negativo da galáxia.
+
+ - Nov 18, 2022 - spectra have been flux calibrated using the standard star spectrum and the iraf package 'calibrate'. For some reason the gemini package 'gscalibrate' would not work - RW
