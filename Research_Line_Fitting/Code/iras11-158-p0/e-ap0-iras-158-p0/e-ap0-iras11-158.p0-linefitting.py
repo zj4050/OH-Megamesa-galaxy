@@ -1,15 +1,19 @@
 import sys
 import os 
+
+sys.path.append('/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Code')
 import line_fitting_code as lfc 
 
-
-spectrum1 = os.path.abspath('Output/iras11-PA158/e-ap0-iras-158-p0/e-ap0-iras11-158-p0_fit_without_spurious_lines.txt')
-
-spectrum2 = os.path.abspath('Output/iras11-PA158/e-ap0-iras-158-p0/e-ap0-iras11-158-p0_PPXFfit.txt')
-#spectrum = '/Users/kamiori/Desktop/Python/line_fitting/pa253_nuclear_ppxf.dat' #laptop directory
+if __file__ == '/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Code/iras11-158-p0/e-ap0-iras-158-p0/e-ap0-iras11-158.p0-linefitting.py':
+        spectrum1 = '/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Output/iras11-PA158/e-ap0-iras-158-p0/e-ap0-iras11-158-p0_fit_without_spurious_lines.txt'
+        spectrum2 = '/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Output/iras11-PA158/e-ap0-iras-158-p0/e-ap0-iras11-158-p0_PPXFfit.txt'
+elif __file__ == '':
+        spectrum1 = ''
+        spectrum2 = ''
 
 filename = 'e-ap0-iras11-158-p0'
 
+output_directory = '/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Output/iras11-PA158/e-ap0-iras-158-p0/'
 
 
 run_region = ['Halpha', 'Hbeta', 'OI']
@@ -162,14 +166,14 @@ for run in run_region:
                 exclude = None
 
 
-z = 0.01078
+        z = 0.01078
 
-#output_directory = '/Users/kamiori/Desktop/Python/line_fitting/fit_data/pa253/'
+        #output_directory = '/Users/kamiori/Desktop/Python/line_fitting/fit_data/pa253/'
 
-#output_directory = '/Users/kamiori/Desktop/Python/Research Project/OH Megamesa/Research_Line_Fitting/Output/iras11-PA158/e-ap0-iras-158-p0/' #mac_mini_directory
+        #output_directory = '/Users/kamiori/Desktop/Python/Research Project/OH Megamesa/Research_Line_Fitting/Output/iras11-PA158/e-ap0-iras-158-p0/' #mac_mini_directory
 
-output_directory = os.path.abspath('Output/iras11-PA158/e-ap0-iras-158-p0') + '/'
-center = 1136.44 # center pixel for PA253 extractions
+        
+        center = 1136.44 # center pixel for PA253 extractions
 
-lfc.lineFit(spectrum1, spectrum2, guesses, tied, limits, limited, output_filename, filename, output_directory, sigma_region, z, rest, lines, exclude, center)
+        lfc.lineFit(spectrum1, spectrum2, guesses, tied, limits, limited, output_filename, filename, output_directory, sigma_region, z, rest, lines, exclude, center)
 

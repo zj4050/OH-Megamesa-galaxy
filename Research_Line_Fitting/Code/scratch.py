@@ -2,6 +2,8 @@ import numpy as np
 import random
 import matplotlib.pyplot as plt
 import os
+
+
 import line_fitting_code as lfc
 
 '''folder = 'PA158'
@@ -64,6 +66,10 @@ print("Peak y: ", peak_y)
 plt.show()'''
 
 
+#'/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Output/iras11-PA158/e-ap0-iras-158-p0/e-ap0-iras11-158-p0_sigmaspec.txt'
+# /Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Output/iras11-PA158/e-ap0-iras-158-p0/e-ap0-iras11-158-p0_sigmaspec.txt
+direc1 = os.path.abspath(os.getcwd())
 
-direc1 = os.path.abspath('Code/')
-print(direc1)
+print(__file__)
+
+
