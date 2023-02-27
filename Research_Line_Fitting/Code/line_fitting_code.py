@@ -89,6 +89,8 @@ def lineFit(spectrum1, spectrum2, guesses, tied, limits, limited, output_filenam
     sigma_spec = sigmaSpec(wv, norm_flux, sigma_region)
     
     # writing error spectrum to a file
+    os.remove(output_directory + filename + '_' + 'sigmaspec' + ".txt")
+    
     with open(output_directory + filename + '_' + 'sigmaspec' + ".txt",'a') as f:
         f.write(f"{format('WV','8.8s')}\t {format('Sigma','8.8s')}\n")
                 
