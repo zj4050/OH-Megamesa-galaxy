@@ -2,6 +2,18 @@ import os
 
 # Define the paths of the folders containing the scripts:
 folder_paths = []
+
+machine = 'laptop' #['laptop', 'mac-mini']
+
+if machine  == 'laptop':
+    dir     = 'Users/kamiori/Desktop/OH-Megamesa-galaxy/Research_Line_Fitting/Code/'
+
+elif machine == 'mac-mini':
+    dir     = 'Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Code/'
+
+
+
+
 for folder in ['PA158', 'PA239', 'PA261']:
     List_label        = []
 
@@ -31,10 +43,17 @@ for folder in ['PA158', 'PA239', 'PA261']:
 
         for i in range(19):
             List_label.append(i)
-
+   
+   #/Users/kamiori/Desktop/OH-Megamesa-galaxy/Research_Line_Fitting/Code/iras11-158-p0/e-ap0-iras-158-p0/e-ap0-iras11-158.p0-linefitting.py
     for i in List_label:
         #path = '~/Code/iras11-158-p0/e-ap0-iras-158-p0/~ iras11-158.p0'
         #path = '~/Code/iras11-PA239/~ iras-239-p15/~ iras11-239-p15'
         #path = '~/Code/iras11-PA261/~ iras-569-pa261/ ~ iras11-569-pa261'
-        path = '/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Code/{:s}/e-ap{:s}-{:s}/e-ap{:s}-{:s}-linefitting.py'\
+        path = dir + '{:s}/e-ap{:s}-{:s}/e-ap{:s}-{:s}-linefitting.py'\
                 .format(index1, str(i), index2, str(i), index3)
+
+        folder_paths.append(path)
+
+
+    for paths in folder_paths:
+        os.system(paths)

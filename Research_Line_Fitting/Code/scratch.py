@@ -2,9 +2,9 @@ import numpy as np
 import random
 import matplotlib.pyplot as plt
 import os
+import line_fitting_code as lfc
 
-
-folder = 'PA158'
+'''folder = 'PA158'
 
 
 List_label        = []
@@ -61,4 +61,9 @@ print("Peak x: ", peak_x)
 print("Peak y: ", peak_y)
 
 # Show the plot
-plt.show()
+plt.show()'''
+
+
+
+direc1 = os.path.abspath('Code/')
+print(direc1)
