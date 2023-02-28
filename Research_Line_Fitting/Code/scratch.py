@@ -74,5 +74,5 @@ file = np.loadtxt(file1, skiprows= 1, usecols= 2)
 
 print(len(file))
 '''
-
-print(__file__)
+filename = os.path.basename(__file__)
+print(filename[0:3])

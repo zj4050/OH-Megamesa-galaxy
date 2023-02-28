@@ -4,11 +4,14 @@ import os
 sys.path.append('/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Code')
 import line_fitting_code as lfc 
 
-filename = 'e-ap0-iras11-158-p0'
-filename2 = 'e-ap0-iras-158'
+index = os.path.basename(__file__)[4]
+
+filename = 'e-ap{:s}-iras11-158'.format(index)
+filename2 = 'e-ap{:s}-iras-158'.format(index)
 
 
-if __file__ == '/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Code/iras11-158-p0/e-ap0-iras-158-p0/e-ap0-iras11-158.p0-linefitting.py':
+if __file__ == '/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Code/iras11-158-p0/{:s}/{:s}.p0-linefitting.py'\
+                .format(filename2, filename):
         spectrum1 = '/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Output/iras11-PA158/e-ap0-iras-158-p0/e-ap0-iras11-158-p0_fit_without_spurious_lines.txt'
         spectrum2 = '/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Output/iras11-PA158/e-ap0-iras-158-p0/e-ap0-iras11-158-p0_PPXFfit.txt'
         output_directory = '/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Output/iras11-PA158/e-ap0-iras-158-p0/'
@@ -174,10 +177,6 @@ for run in run_region:
 
 
         z = 0.01078
-
-        #output_directory = '/Users/kamiori/Desktop/Python/line_fitting/fit_data/pa253/'
-
-        #output_directory = '/Users/kamiori/Desktop/Python/Research Project/OH Megamesa/Research_Line_Fitting/Output/iras11-PA158/e-ap0-iras-158-p0/' #mac_mini_directory
 
         
         center = 1136.44 # center pixel for PA253 extractions
