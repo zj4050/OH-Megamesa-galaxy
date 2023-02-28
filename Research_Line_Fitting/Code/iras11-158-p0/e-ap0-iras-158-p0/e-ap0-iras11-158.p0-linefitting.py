@@ -16,7 +16,7 @@ filename = 'e-ap0-iras11-158-p0'
 output_directory = '/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Output/iras11-PA158/e-ap0-iras-158-p0/'
 
 
-run_region = ['Halpha', 'Hbeta', 'OI']
+run_region = ['OI', 'Halpha', 'Hbeta']
 
 for run in run_region:
         # H_alpha region fitting

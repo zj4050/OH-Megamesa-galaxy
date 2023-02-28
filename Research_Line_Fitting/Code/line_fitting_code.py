@@ -262,17 +262,33 @@ def lineFit(spectrum1, spectrum2, guesses, tied, limits, limited, output_filenam
     {format(i[5],'8.3e')}\t {format(i[6],'8.3f')}\t {format(i[7],'8.3f')}\t {format(i[8],'8.3e')}\t {format(i[9],'8.3e')}\t {format(i[10],'8.3f')}\t \
     {format(i[11],'8.3f')}\t {format(i[12],'8.3f')}\t {format(i[13],'8.3f')}\t {format(i[14],'8.3f')}\t {format(i[15],'8.3f')}\t {format(i[16],'8.3f')}\n")
                             
-            f.close()
+         
     
     # if the file already exists, just append the data for new lines that have been fit
     else:
-        with open(output_directory + filename + '_fit_data.dat' , 'a') as f:
-            for i in info:
-                f.write(f"{format(i[0],'8.8s')}\t {format(i[1],'8.3f')}\t {format(i[2],'8.3f')}\t {format(i[3],'8.3f')}\t {format(i[4],'8.3e')}\t \
-    {format(i[5],'8.3e')}\t {format(i[6],'8.3f')}\t {format(i[7],'8.3f')}\t {format(i[8],'8.3e')}\t {format(i[9],'8.3e')}\t \
-    {format(i[10],'8.3f')}\t {format(i[11],'8.3f')}\t {format(i[12],'8.3f')}\t {format(i[13],'8.3f')}\t {format(i[14],'8.3f')}\t \
-    {format(i[15],'8.3f')}\t {format(i[16],'8.3f')}\n")
-                        
-            f.close()
+        file1 = np.loadtxt(output_directory + filename + '_fit_data.dat', skiprows= 1, usecols= 2)
+        if len(file1) > 18:
+            os.remove(output_directory + filename + '_fit_data.dat')
+
+            with open(output_directory + filename + '_fit_data.dat','a') as f:
+                f.write(f"{format('Line','8.8s')}\t {format('Rest_wv','8.8s')}\t {format('Center','8.8s')}\t {format('dCenter','8.8s')}\t {format('Amp','8.8s')}\t \
+        {format('dAmp','8.8s')}\t {format('Sigma','8.8s')} \t {format('dSig','8.8s')} \t {format('Flux','8.8s')}\t \
+        {format('dFlux','8.8s')}\t {format('Pos','8.8s')}\t {format('dPos','8.8s')}\t {format('Vel','8.8s')}\t {format('Rel_Vel','8.8s')}\t \
+        {format('dVel','8.8s')}\t {format('flu_per','8.8s')}\t {format('fwhm', '8.8s')}\n")
+                            
+                for i in info:
+                    f.write(f"{format(i[0],'8.8s')}\t {format(i[1],'8.3f')}\t {format(i[2],'8.3f')}\t {format(i[3],'8.3f')}\t {format(i[4],'8.3e')}\t \
+        {format(i[5],'8.3e')}\t {format(i[6],'8.3f')}\t {format(i[7],'8.3f')}\t {format(i[8],'8.3e')}\t {format(i[9],'8.3e')}\t {format(i[10],'8.3f')}\t \
+        {format(i[11],'8.3f')}\t {format(i[12],'8.3f')}\t {format(i[13],'8.3f')}\t {format(i[14],'8.3f')}\t {format(i[15],'8.3f')}\t {format(i[16],'8.3f')}\n")
+    
+        else:
+            with open(output_directory + filename + '_fit_data.dat' , 'a') as f:
+                for i in info:
+                    f.write(f"{format(i[0],'8.8s')}\t {format(i[1],'8.3f')}\t {format(i[2],'8.3f')}\t {format(i[3],'8.3f')}\t {format(i[4],'8.3e')}\t \
+        {format(i[5],'8.3e')}\t {format(i[6],'8.3f')}\t {format(i[7],'8.3f')}\t {format(i[8],'8.3e')}\t {format(i[9],'8.3e')}\t \
+        {format(i[10],'8.3f')}\t {format(i[11],'8.3f')}\t {format(i[12],'8.3f')}\t {format(i[13],'8.3f')}\t {format(i[14],'8.3f')}\t \
+        {format(i[15],'8.3f')}\t {format(i[16],'8.3f')}\n")
+                            
+            
             
 
