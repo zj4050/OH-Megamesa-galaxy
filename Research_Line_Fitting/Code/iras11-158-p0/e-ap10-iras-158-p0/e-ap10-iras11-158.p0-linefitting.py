@@ -1,22 +1,31 @@
 import sys
+import os
 
-sys.path.append('/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Code')
-import line_fitting_code as lfc 
+index = os.path.basename(__file__)[4:6]
+
+filename = 'e-ap{:s}-iras11-158-p0'.format(index)
+filename2 = 'e-ap{:s}-iras-158-p0'.format(index)
+filename3 = 'e-ap{:s}-iras11-158.p0'.format(index)
 
 
+if __file__ == '/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Code/iras11-158-p0/{:s}/{:s}-linefitting.py'\
+                .format(filename2, filename3):
+        spectrum1 = '/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Output/iras11-PA158/{:s}/{:s}_fit_without_spurious_lines.txt'\
+                        .format(filename2, filename)
+        spectrum2 = '/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Output/iras11-PA158/{:s}/{:s}_PPXFfit.txt'\
+                        .format(filename2, filename)
+        output_directory = '/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Output/iras11-PA158/{:s}/'.format(filename2)
+        
+        sys.path.append('/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Code')
+        import line_fitting_code as lfc 
 
-filename = 'e-ap10-iras11-158-p0'
-filename2 = 'e-ap10-iras-158-p0'
-filename3 = 'e-ap10-iras11-158.p0'
-
-output_directory = '/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Output/iras11-PA158/{:s}/'.format(filename2) #mac_mini_directory
-
-if __file__ == '/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Code/iras11-158-p0/{:s}/{:s}-linefitting.py'.format(filename2, filename3):
-        spectrum1 = '/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Output/iras11-PA158/{:s}/{:s}_fit_without_spurious_lines.txt'.format(filename2, filename)
-        spectrum2 = '/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Output/iras11-PA158/{:s}/{:s}_PPXFfit.txt'.format(filename2, filename)
-elif __file__ == '':
-        spectrum1 = ''
-        spectrum2 = ''
+elif __file__ == '/Users/kamiori/Desktop/OH-Megamesa-galaxy/Research_Line_Fitting/Code/iras11-158-p0/{:s}/{:s}-linefitting.py'.format(filename2, filename3):
+        spectrum1 = '/Users/kamiori/Desktop/OH-Megamesa-galaxy/Research_Line_Fitting/Output/iras11-PA158/{:s}/{:s}_fit_without_spurious_lines.txt'.format(filename2, filename)
+        spectrum2 = '/Users/kamiori/Desktop/OH-Megamesa-galaxy/Research_Line_Fitting/Output/iras11-PA158/{:s}/{:s}_PPXFfit.txt'.format(filename2, filename)
+        output_directory = '/Users/kamiori/Desktop/OH-Megamesa-galaxy/Research_Line_Fitting/Output/iras11-PA158/{:s}/'.format(filename2)
+        #/Users/kamiori/Desktop/OH-Megamesa-galaxy/Research_Line_Fitting/Output/iras11-PA158/e-ap0-iras-158-p0
+        sys.path.append('/Users/kamiori/Desktop/OH-Megamesa-galaxy/Research_Line_Fitting/Code')
+        import line_fitting_code as lfc 
 
 run_region = ['OI', 'Halpha', 'Hbeta']
 
