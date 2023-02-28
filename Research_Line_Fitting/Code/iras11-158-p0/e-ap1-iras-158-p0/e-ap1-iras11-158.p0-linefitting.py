@@ -5,23 +5,26 @@ import line_fitting_code as lfc
 
 
 
-filename = 'e-ap10-iras11-158-p0'
-filename2 = 'e-ap10-iras-158-p0'
-filename3 = 'e-ap10-iras11-158.p0'
-
-output_directory = '/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Output/iras11-PA158/{:s}/'.format(filename2) #mac_mini_directory
-
-if __file__ == '/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Code/iras11-158-p0/{:s}/{:s}-linefitting.py'.format(filename2, filename3):
-        spectrum1 = '/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Output/iras11-PA158/{:s}/{:s}_fit_without_spurious_lines.txt'.format(filename2, filename)
-        spectrum2 = '/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Output/iras11-PA158/{:s}/{:s}_PPXFfit.txt'.format(filename2, filename)
+if __file__ == '/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Code/iras11-158-p0/e-ap1-iras-158-p0/e-ap1-iras11-158.p0-linefitting.py':
+        spectrum1 = '/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Output/iras11-PA158/e-ap1-iras-158-p0/e-ap1-iras11-158-p0_fit_without_spurious_lines.txt'
+        spectrum2 = '/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Output/iras11-PA158/e-ap1-iras-158-p0/e-ap1-iras11-158-p0_PPXFfit.txt'
 elif __file__ == '':
         spectrum1 = ''
         spectrum2 = ''
 
+
+
+
+
+#spectrum = '/Users/kamiori/Desktop/Python/line_fitting/pa253_nuclear_ppxf.dat' #laptop directory
+
+filename = 'e-ap1-iras11-158-p0'
+output_directory = '/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Output/iras11-PA158/e-ap1-iras-158-p0/' #mac_mini_directory
+
+#run = 'Hbeta' #Choice to fit region ['Halpha', 'Hbeta', 'OI']
 run_region = ['OI', 'Halpha', 'Hbeta']
 
 for run in run_region:
-
         # H_alpha region fitting
         # each of these lists must be in the same order as the other - typically listed from 'bluest' to reddest line
 
@@ -37,33 +40,11 @@ for run in run_region:
 
         # amplitude, lambda center, sigma [normalized flux units, angstrom, angstrom]
 
-                NII_6548_amp = 0.76
-                NII_6548_lamc = 6612.7
-                NII_6548_sig = 1.5
-
-                Halpha_amp = 3.5
-                Halpha_lamc = 6627.3
-                Halpha_sig = 1.5
-
-                NII_6583_amp = 2.23
-                NII_6583_lamc = 6648.5
-                NII_6583_sig = 1.5
-
-                SII_6716_amp = 0.921
-                SII_6716_lamc = 6782.7
-                SII_6716_sig = 1.5
-
-                SII_6730_amp = 0.676
-                SII_6730_lamc = 6797.35
-                SII_6730_sig = 1.5
-
-
-
-                guesses = [NII_6548_amp, NII_6548_lamc, NII_6548_sig, #[NII]6548
-                        Halpha_amp, Halpha_lamc, Halpha_sig, #H_alpha
-                        NII_6583_amp, NII_6583_lamc, NII_6583_sig, # [NII]6583
-                        SII_6716_amp, SII_6716_lamc, SII_6716_sig, # [SII]6716
-                        SII_6730_amp, SII_6730_lamc, SII_6730_sig # [SII]6730
+                guesses = [0.719, 6612.7, 1.5, #[NII]6548
+                        3.4, 6627.3,1.5, #H_alpha
+                        2.015,6648.3,1.5, # [NII]6583
+                        0.61,6782.3,1.5, # [SII]6716
+                        0.501,6797,1.5 # [SII]6730
                         ]
 
         # certain parameters are 'tied' to others - such as the amplitude and widths of the doublets - this removes some of the free parameters
@@ -113,21 +94,11 @@ for run in run_region:
 
                 rest = [Hbeta, OIII_4959, OIII_5007]
 
-                Hbeta_amp = 0.679
-                Hbeta_lamc = 4909.2
-                Hbeta_sig = 1.5
 
-                OIII_4959_amp = 0.04
-                OIII_4959_lamc = 5007.3
-                OIII_4959_sig = 2
 
-                OIII_5007_amp = 0.225
-                OIII_5007_lamc = 5055.54
-                OIII_5007_sig = 1.5
-
-                guesses = [Hbeta_amp, Hbeta_lamc, Hbeta_sig, # Amplitude, lambda center, sigma
-                OIII_4959_amp, OIII_4959_lamc, OIII_4959_sig,
-                OIII_5007_amp, OIII_5007_lamc, OIII_5007_sig]
+                guesses = [0.371, 4909.7, 1.5, # Amplitude, lambda center, sigma
+                0.048, 5008.6, 1.5,
+                0.192, 5056.1, 1.5]
 
                 tied = ['', '', '',  # Hbeta
                 '1/3 * p[6]', '4958.9/5006.9 * p[7]', 'p[8]',  # OIII_4959     
@@ -158,17 +129,8 @@ for run in run_region:
 
                 rest = [OI_6300, OI_6364]
 
-                OI_6300_amp = 0.504
-                OI_6300_lamc = 6362.5
-                OI_6300_sig = 1.5
-
-                OI_6364_amp = 0.231
-                OI_6364_lamc = 6426.82
-                OI_6364_sig = 1.5
-
-
-                guesses = [OI_6300_amp, OI_6300_lamc, OI_6300_sig, #[OI]6300
-                        OI_6364_amp, OI_6364_lamc, OI_6364_sig # [OI]6364
+                guesses = [0.336, 6363, 1.5, #[OI]6300
+                        0.165, 6427.1, 1.5 # [OI]6364
                         ]
 
                 tied = ['', '', '', #[OI]6300
