@@ -4,16 +4,23 @@ import os
 sys.path.append('/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Code')
 import line_fitting_code as lfc 
 
+filename = 'e-ap0-iras11-158-p0'
+filename2 = 'e-ap0-iras-158'
+
+
 if __file__ == '/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Code/iras11-158-p0/e-ap0-iras-158-p0/e-ap0-iras11-158.p0-linefitting.py':
         spectrum1 = '/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Output/iras11-PA158/e-ap0-iras-158-p0/e-ap0-iras11-158-p0_fit_without_spurious_lines.txt'
         spectrum2 = '/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Output/iras11-PA158/e-ap0-iras-158-p0/e-ap0-iras11-158-p0_PPXFfit.txt'
-elif __file__ == '':
-        spectrum1 = ''
-        spectrum2 = ''
+        output_directory = '/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Output/iras11-PA158/e-ap0-iras-158-p0/'
 
-filename = 'e-ap0-iras11-158-p0'
 
-output_directory = '/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Output/iras11-PA158/e-ap0-iras-158-p0/'
+elif __file__ == '/Users/kamiori/Desktop/OH-Megamesa-galaxy/Research_Line_Fitting/Code/iras11-158-p0/e-ap0-iras-158-p0/e-ap0-iras11-158.p0-linefitting.py':
+        spectrum1 = '/Users/kamiori/Desktop/OH-Megamesa-galaxy/Research_Line_Fitting/Output/iras11-PA158/e-ap0-iras-158-p0/e-ap0-iras11-158-p0_fit_without_spurious_lines.txt'
+        spectrum2 = '/Users/kamiori/Desktop/OH-Megamesa-galaxy/Research_Line_Fitting/Output/iras11-PA158/e-ap0-iras-158-p0/e-ap0-iras11-158-p0_PPXFfit.txt'
+        output_directory = '/Users/kamiori/Desktop/OH-Megamesa-galaxy/Research_Line_Fitting/Output/iras11-PA158/e-ap0-iras-158-p0'
+
+
+
 
 
 run_region = ['OI', 'Halpha', 'Hbeta']

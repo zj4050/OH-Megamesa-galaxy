@@ -66,12 +66,13 @@ print("Peak y: ", peak_y)
 plt.show()'''
 
 
-#'/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Output/iras11-PA158/e-ap0-iras-158-p0/e-ap0-iras11-158-p0_sigmaspec.txt'
+'''#'/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Output/iras11-PA158/e-ap0-iras-158-p0/e-ap0-iras11-158-p0_sigmaspec.txt'
 # /Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Output/iras11-PA158/e-ap0-iras-158-p0/e-ap0-iras11-158-p0_sigmaspec.txt
 file1 = '/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Output/iras11-PA158/e-ap0-iras-158-p0/e-ap0-iras11-158-p0_fit_data.dat'
 
 file = np.loadtxt(file1, skiprows= 1, usecols= 2)
 
 print(len(file))
+'''
 
-
+print(__file__)
