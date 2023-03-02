@@ -3,7 +3,7 @@ import subprocess
 # Define the paths of the folders containing the scripts:
 folder_paths = []
 
-machine = 'mac-mini' #['laptop', 'mac-mini']
+machine = 'laptop' #['laptop', 'mac-mini']
 #/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Code/run.py
 if machine  == 'laptop':
     dir     = '/Users/kamiori/Desktop/OH-Megamesa-galaxy/Research_Line_Fitting/Code/'
