@@ -1,3 +1,10 @@
+'''
+    This code is to read the data. 
+
+'''
+
+
+
 import numpy as np
 import matplotlib.pyplot as plt
 import os 
@@ -300,30 +307,4 @@ for folder in data_folder:
 
 
 
-    plt.scatter(Halpha_position, Halpha_velocity, label = r'$H_{\alpha}$')
-    plt.scatter(NII_position, NII_velocity, facecolor = 'none', edgecolors='black' ,label = '[NII]')
-    plt.scatter(SII_position, SII_velocity, label = '[SII]')
-
-    plt.errorbar(Halpha_position, Halpha_velocity, xerr= Halpha_position_err, yerr= Halpha_velocity_err, fmt='none')
-    plt.errorbar(NII_position, NII_velocity,xerr=NII_position_err, yerr= NII_velocity_err, fmt='none', ecolor= 'black')
-    plt.errorbar(SII_position, SII_velocity,xerr= SII_position_err, yerr= SII_velocity_err, fmt='none')
-
-    plt.legend()
-    plt.xlabel('Position')
-    plt.ylabel('Velocity ($km/s$)')
-    plt.title('Velocity')
-    plt.savefig(output_directory + 'X - V.png')
-    plt.clf()
-
-    plt.scatter(Halpha_position, Halpha_fwhm, label = r'$H_{\alpha}$')
-    plt.scatter(NII_position, NII_fwhm, label = '[NII]')
-    plt.scatter(SII_position, SII_fwhm, label = '[SII]')
-
-    plt.legend()
-    plt.xlabel('Position')
-    plt.ylabel('Velocity ($km/s$)')
-    plt.title('Velocity FWHM')
-    plt.savefig(output_directory + 'FWHM.png')
-
-    plt.clf()
 

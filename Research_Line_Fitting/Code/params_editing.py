@@ -1,3 +1,16 @@
+'''
+    This code is for data manipulation. What I am doing here basically is:
+
+    (1) Calculating the emission line ratio
+    (2) Plotting the several important diagrams as shown in the comment in the plotting part
+
+
+
+'''
+
+
+
+
 import numpy as np
 import matplotlib.pyplot as plt
 import functions as f

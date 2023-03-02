@@ -1,3 +1,8 @@
+'''
+    This code is used to plot and save all the original spectra. 
+
+'''
+
 import numpy as np
 
 import matplotlib.pyplot as plt

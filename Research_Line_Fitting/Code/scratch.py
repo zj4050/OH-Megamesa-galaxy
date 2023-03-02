@@ -1,3 +1,9 @@
+'''
+    This is just a scratch place, where you can try your code when you are not sure the output.
+
+'''
+
+
 import numpy as np
 import random
 import matplotlib.pyplot as plt

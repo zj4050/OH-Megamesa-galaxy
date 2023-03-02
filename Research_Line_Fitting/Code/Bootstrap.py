@@ -2,6 +2,9 @@ import numpy as np
 import random
 import os
 
+##
+#This one is the bootstrap method code, which is going to be used to create new spectra with more reasonable line ratios and errors corresponding to them.
+
 
 folder = 'PA158'
 

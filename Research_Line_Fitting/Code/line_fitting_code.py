@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+'''This code mainly written by Ryan Will, but I revised a little bit to fit my own research work.
+   Modifications:
+   (1) I fixed the writing sigma.txt file section to make it available to run multiple times, while the old version 
+   can only allow for one-time run. 
+   
+   (2) I added spectrum2 into the linefit function due to my own file creation reason.
+'''
 
 def sigmaSpec(wv, flux, region):
     import numpy as np

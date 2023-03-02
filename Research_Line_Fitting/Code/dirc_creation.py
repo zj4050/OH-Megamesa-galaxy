@@ -1,9 +1,7 @@
 import os 
 import shutil
-#for i in range(1,15):
-#    output_directory = '/Users/kamiori/Desktop/Python/Research Project/OH Megamesa/Research_Line_Fitting/Output_fit_spectra/iras11-PA261/e-ap{:s}-iras-569-pa261'.format(str(i))
-#    if not os.path.isdir(output_directory):
-#        os.makedirs(output_directory)
+
+# This code is to copy and remove files. Because there are too many data files in the output, writing a code to ask computer to do it for you is faster.
 
 
 hint = 'copy_261'
