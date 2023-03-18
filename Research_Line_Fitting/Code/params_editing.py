@@ -3,9 +3,9 @@
 
     (1) Calculating the emission line ratio
     (2) Plotting the several important diagrams as shown in the comment in the plotting part
+                                                                                 --Ziming Ji
 
-
-
+    Code route updated 3.18.2023 --Ziming Ji
 '''
 
 
@@ -22,10 +22,7 @@ machine          = 'mac-mini' #['laptop', 'mac-mini']
 
 for folder in data_folder:
     # Determine the route of files
-    if machine == 'laptop':
-        output_directory = '/Users/kamiori/Desktop/Research_project/Research Project/OH Megamesa/Research_Line_Fitting/parameters information/iras11-{:s}/'.format(folder) #laptop
-    elif machine == 'mac-mini':
-        output_directory = '/Users/kamiori/Desktop/Python/Research Project/OH Megamesa/Research_Line_Fitting/parameters information/iras11-{:s}/'.format(folder)  #mac-mini directory
+    output_directory = 'Research_Line_Fitting/parameters information/iras11-{:s}/'.format(folder)
 
     #Generate the emission line files
     OI_file     = output_directory + 'flux_ratio_data/{:s}_OI6300_fit_data.dat'.format(folder)

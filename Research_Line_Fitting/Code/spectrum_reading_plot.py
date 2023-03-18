@@ -1,6 +1,7 @@
 '''
     This code is used to plot and save all the original spectra. 
 
+    Code route updated --Ziming 03.18.2023
 '''
 
 import numpy as np
@@ -9,7 +10,6 @@ import matplotlib.pyplot as plt
 
 data_folder = ['PA158', 'PA239', 'PA261']
 
-machine     = 'laptop'
 
 for folder in data_folder:
 
@@ -43,10 +43,7 @@ for folder in data_folder:
 
     #File reading 
     for i in List_label:
-        if machine == 'laptop':
-            file = '/Users/kamiori/Desktop/Research_project/Research Project/OH Megamesa/Research_Line_Fitting/Output/iras11-{:s}/e-ap{:s}-{:s}/e-ap{:s}-{:s}_PPXFfit.txt'\
-                    .format(folder, str(i), index1, str(i), index2)
-        #file = '/Users/kamiori/Desktop/Python/Research Project/OH Megamesa/Research_Line_Fitting/Output/e-ap{:s}-{:s}/e-ap{:s}-{:s}_PPXFfit.txt'.format(str(i), index1, str(i), index2)
+        file = 'Research_Line_Fitting/Output/iras11-{:s}/e-ap{:s}-{:s}/e-ap{:s}-{:s}_PPXFfit.txt'.format(folder, str(i), index1, str(i), index2)
 
         df1 = np.loadtxt(file, skiprows=3)
         wlen = df1[:, 0]
@@ -54,7 +51,7 @@ for folder in data_folder:
         wlen_delete = []
         newgal_spec_delete = []
         
-        save_direct = '/Users/kamiori/Desktop/Research_project/Research Project/OH Megamesa/Research_Line_Fitting/Original_spectrum/' + folder + '/'
+        save_direct = 'Research_Line_Fitting/Original_spectrum/' + folder + '/'
 
         #data plot 
         plt.plot(wlen, newgal_spec)

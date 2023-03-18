@@ -1,6 +1,7 @@
 '''
     This code is to read the data. 
-
+    
+    Code route updated --Ziming 03.18.2023
 '''
 
 
@@ -10,8 +11,8 @@ import matplotlib.pyplot as plt
 import os 
 
 data_folder      = ['PA158', 'PA239', 'PA261']
-#folder           = 'PA158' # [PA158, PA239, PA261]
-machine          = 'mac-mini' #['mac-mini', 'laptop']
+
+
 for folder in data_folder:
     if folder == 'PA158':
         index = '158-p0'
@@ -22,13 +23,9 @@ for folder in data_folder:
 
 
 
+    output_directory = 'Research_Line_Fitting/parameters information/iras11-{:s}/'.format(folder)
 
 
-
-    if machine == 'mac-mini':
-        output_directory = '/Users/kamiori/Desktop/Python/Research Project/OH Megamesa/Research_Line_Fitting/parameters information/iras11-{:s}/'.format(folder)          # Mac-mini directory
-    elif machine == 'laptop':
-        output_directory = '/Users/kamiori/Desktop/Research_project/Research Project/OH Megamesa/Research_Line_Fitting/parameters information/iras11-{:s}}/'.format(folder) #laptop directory
 
 
 
@@ -124,10 +121,7 @@ for folder in data_folder:
             List_label.append(i)
 
     for i in List_label:
-        if machine == 'mac-mini':
-            file = '/Users/kamiori/Desktop/Python/Research Project/OH Megamesa/Research_Line_Fitting/parameters information/iras11-{:s}/data/e-ap{:s}-iras11-{:s}_fit_data.dat'.format(folder,str(i), index)
-        elif machine == 'laptop':
-            file  = '/Users/kamiori/Desktop/Research_project/Research Project/OH Megamesa/Research_Line_Fitting/parameters information/iras11-{:s}/data/e-ap{:s}-iras11-{:s}_fit_data.dat'.format(folder, str(i), index) #laptop directory
+        file = 'Research_Line_Fitting/parameters information/iras11-{:s}/data/e-ap{:s}-iras11-{:s}_fit_data.dat'.format(folder,str(i), index)
         
         df_position     = np.loadtxt(file, skiprows = 1, usecols= 10)
         df_velocity     = np.loadtxt(file, skiprows= 1, usecols= 12)

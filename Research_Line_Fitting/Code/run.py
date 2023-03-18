@@ -1,6 +1,7 @@
 '''
     This code is used to run all the specific line_fitting files for each spectrum. 
 
+    Code route updated --Ziming Ji 03.18.2023
 '''
 
 
@@ -10,12 +11,8 @@ import subprocess
 folder_paths = []
 
 machine = 'mac-mini' #['laptop', 'mac-mini']
+dir     = 'Research_Line_Fitting/Code/'
 
-if machine  == 'laptop':
-    dir     = '/Users/kamiori/Desktop/OH-Megamesa-galaxy/Research_Line_Fitting/Code/'
-
-elif machine == 'mac-mini':
-    dir     = '/Users/kamiori/Desktop/Research Project/OH Megamesa galaxy/Research_Line_Fitting/Code/'
 
 folder_list = ['PA158', 'PA239', 'PA261']
 

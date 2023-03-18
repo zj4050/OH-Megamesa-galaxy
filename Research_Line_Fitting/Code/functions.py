@@ -1,3 +1,13 @@
+'''
+    Here are all the functions that are used in the other python code file 
+                                                            -- Ziming Ji
+
+
+
+'''
+
+
+
 import numpy as np
 
 # This code is for functions that used through the main editing code. 

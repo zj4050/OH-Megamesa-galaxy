@@ -6,6 +6,7 @@
    can only allow for one-time run. 
    
    (2) I added spectrum2 into the linefit function due to my own file creation reason.
+                                                                           --Ziming Ji
 '''
 
 def sigmaSpec(wv, flux, region):
