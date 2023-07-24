@@ -189,6 +189,84 @@ for folder in data_folder:
     position = position - position[0] 
     # Plotting part:
     
+    fig, axes = plt.subplots(nrows=1, ncols=3, figsize=(12,5))
+    
+    axes[0].scatter(total_dict['NII_Halpha_flux_ratio'], total_dict['OIII_Hbeta_flux_ratio'])
+    axes[0].errorbar(total_dict['NII_Halpha_flux_ratio'], total_dict['OIII_Hbeta_flux_ratio'],\
+                 xerr= total_dict['NII_Halpha_flux_ratio_err'], yerr= total_dict['OIII_Hbeta_flux_ratio_err'], fmt= 'o', ecolor='black')
+    xmax   =  max(total_dict['NII_Halpha_flux_ratio']) + total_dict['NII_Halpha_flux_ratio_err'][np.where(max(total_dict['NII_Halpha_flux_ratio']))]
+    xmin   = -0.7
+    ymin, ymax  = (-3.5, 2.2)
+
+    # [NII] starburst line data generation and plot 
+    x_step = np.linspace(xmin, 0.34, num = 50)
+    axes[0].plot(x_step, f.NII_Starburst(x_step), color = 'red')
+    # [NII] starburst modified line plot
+    x_step = np.linspace(xmin, -0.077, num= 50)
+    axes[0].plot(x_step, f.NII_modified_starburst(x_step), linestyle = 'dashed', color = 'black')
+    axes[0].set_xlabel(r'$\log{([NII]6584/H_{\alpha})}$')
+    axes[0].set_ylabel(r'$\log{([OIII]5007/H_{\beta})}$')
+    for i, label in enumerate(List_label):
+        axes[0].annotate(label, (total_dict['NII_Halpha_flux_ratio'][i], total_dict['OIII_Hbeta_flux_ratio'][i]))
+
+    axes[0].set_xlim(xmin, max(xmax, 0.34+0.1))
+    axes[0].set_ylim(ymin, ymax)
+    
+    axes[1].scatter(total_dict['SII_Halpha_flux_ratio'], total_dict['OIII_Hbeta_flux_ratio'])
+    axes[1].errorbar(total_dict['SII_Halpha_flux_ratio'], total_dict['OIII_Hbeta_flux_ratio'], \
+                xerr = total_dict['SII_Halpha_flux_ratio_err'], yerr = total_dict['OIII_Hbeta_flux_ratio_err'], fmt='o', ecolor='black')
+
+    # (2.1) Starburst line data generation
+    xmax  = max(total_dict['SII_Halpha_flux_ratio']) + total_dict['SII_Halpha_flux_ratio_err'][np.where(max(total_dict['SII_Halpha_flux_ratio']))]
+    xmin  = -1.2
+    x_step = np.linspace(xmin, 0.17, num = 50)
+    fig_xmax = max(xmax, 0.17) + 0.1
+    # (2.2) Starburst line plot
+    axes[1].plot(x_step, f.SII_Starburst(x_step), color = 'red')
+
+    # (3) Seyfert separation line data generation and figure plot
+    x_step = np.linspace(-0.315, fig_xmax, num= 50)
+    axes[1].plot(x_step, f.SII_Seyfert_separation_line(x_step), linestyle = '-.', color = 'blue')
+
+
+    axes[1].set_xlabel(r'$\log{([SII]/H_{\alpha})}$')
+    axes[1].set_ylabel(r'$\log{([OIII]5007/H_{\beta})}$')
+
+    for i, label in enumerate(List_label):
+        axes[1].annotate(label, (total_dict['SII_Halpha_flux_ratio'][i], total_dict['OIII_Hbeta_flux_ratio'][i]))
+
+    axes[1].set_xlim(xmin, fig_xmax)
+    axes[1].set_ylim(ymin, ymax)
+
+    # OI BPT Diagram
+    axes[2].scatter(total_dict['OI_Halpha_flux_ratio'], total_dict['OIII_Hbeta_flux_ratio'])
+    axes[2].errorbar(total_dict['OI_Halpha_flux_ratio'], total_dict['OIII_Hbeta_flux_ratio'],\
+                 xerr= total_dict['OI_Halpha_flux_ratio_err'], yerr= total_dict['OIII_Hbeta_flux_ratio_err'], fmt= 'o', ecolor='black')
+
+    # Plot size generation
+    xmin       = -2.25
+    xmax       = max(total_dict['OI_Halpha_flux_ratio']) + total_dict['OI_Halpha_flux_ratio_err'][np.where(max(total_dict['OI_Halpha_flux_ratio']))]
+    fig_xmax   = xmax + 0.2
+
+    # OI Starburst line data generation and figure plot
+    x_step     = np.linspace(xmin, -0.60, num= 50)
+    axes[2].plot(x_step, f.OI_Starburst(x_step), color = 'red')
+
+    # OI Seyfert Separation line data generation and figure plot
+    x_step     = np.linspace(-1.127, fig_xmax, num= 50)
+    axes[2].plot(x_step, f.OI_Seyfert_separation_line(x_step), linestyle = '-.', color = 'blue')
+
+    axes[2].set_xlabel(r'$\log{([OI]6300/H_{\alpha})}$')
+    axes[2].set_ylabel(r'$\log{([OIII]5007/H_{\beta})}$')
+    for i, label in enumerate(List_label):
+        axes[2].annotate(label, (total_dict['OI_Halpha_flux_ratio'][i], total_dict['OIII_Hbeta_flux_ratio'][i]))
+
+    axes[2].set_xlim(xmin,fig_xmax)
+    axes[2].set_ylim(ymin, ymax)
+    fig.tight_layout()
+    plt.savefig(output_directory + f"BPT Diagram/BPT Diagram_{folder}.png")
+    plt.clf()
+
     #Generating BPT Diagrams (NII, SII, OIII, OI, respectively) 
 
     plt.scatter(total_dict['NII_Halpha_flux_ratio'], total_dict['OIII_Hbeta_flux_ratio'])
