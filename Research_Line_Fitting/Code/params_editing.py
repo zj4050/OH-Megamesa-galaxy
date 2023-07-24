@@ -189,7 +189,7 @@ for folder in data_folder:
     position = position - position[0] 
     # Plotting part:
     
-    fig, axes = plt.subplots(nrows=1, ncols=3, figsize=(12,5))
+    fig, axes = plt.subplots(nrows=1, ncols=3, figsize=(15,8), sharey=True)
     
     axes[0].scatter(total_dict['NII_Halpha_flux_ratio'], total_dict['OIII_Hbeta_flux_ratio'])
     axes[0].errorbar(total_dict['NII_Halpha_flux_ratio'], total_dict['OIII_Hbeta_flux_ratio'],\
@@ -204,8 +204,8 @@ for folder in data_folder:
     # [NII] starburst modified line plot
     x_step = np.linspace(xmin, -0.077, num= 50)
     axes[0].plot(x_step, f.NII_modified_starburst(x_step), linestyle = 'dashed', color = 'black')
-    axes[0].set_xlabel(r'$\log{([NII]6584/H_{\alpha})}$')
-    axes[0].set_ylabel(r'$\log{([OIII]5007/H_{\beta})}$')
+    axes[0].set_xlabel(r'$\log{([NII]6584/H_{\alpha})}$', fontsize=20)
+    axes[0].set_ylabel(r'$\log{([OIII]5007/H_{\beta})}$', fontsize=20)
     for i, label in enumerate(List_label):
         axes[0].annotate(label, (total_dict['NII_Halpha_flux_ratio'][i], total_dict['OIII_Hbeta_flux_ratio'][i]))
 
@@ -229,8 +229,8 @@ for folder in data_folder:
     axes[1].plot(x_step, f.SII_Seyfert_separation_line(x_step), linestyle = '-.', color = 'blue')
 
 
-    axes[1].set_xlabel(r'$\log{([SII]/H_{\alpha})}$')
-    axes[1].set_ylabel(r'$\log{([OIII]5007/H_{\beta})}$')
+    axes[1].set_xlabel(r'$\log{([SII]/H_{\alpha})}$', fontsize=20)
+    #axes[1].set_ylabel(r'$\log{([OIII]5007/H_{\beta})}$', fontsize=20)
 
     for i, label in enumerate(List_label):
         axes[1].annotate(label, (total_dict['SII_Halpha_flux_ratio'][i], total_dict['OIII_Hbeta_flux_ratio'][i]))
@@ -256,8 +256,8 @@ for folder in data_folder:
     x_step     = np.linspace(-1.127, fig_xmax, num= 50)
     axes[2].plot(x_step, f.OI_Seyfert_separation_line(x_step), linestyle = '-.', color = 'blue')
 
-    axes[2].set_xlabel(r'$\log{([OI]6300/H_{\alpha})}$')
-    axes[2].set_ylabel(r'$\log{([OIII]5007/H_{\beta})}$')
+    axes[2].set_xlabel(r'$\log{([OI]6300/H_{\alpha})}$', fontsize=20)
+    #axes[2].set_ylabel(r'$\log{([OIII]5007/H_{\beta})}$', fontsize=20)
     for i, label in enumerate(List_label):
         axes[2].annotate(label, (total_dict['OI_Halpha_flux_ratio'][i], total_dict['OIII_Hbeta_flux_ratio'][i]))
 
