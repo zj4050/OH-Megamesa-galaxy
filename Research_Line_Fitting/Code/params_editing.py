@@ -22,17 +22,17 @@ machine          = 'mac-mini' #['laptop', 'mac-mini']
 
 for folder in data_folder:
     # Determine the route of files
-    output_directory = 'Research_Line_Fitting/parameters information/iras11-{:s}/'.format(folder)
+    output_directory = f'Research_Line_Fitting/parameters information/iras11-{folder}/'
 
     #Generate the emission line files
-    OI_file     = output_directory + 'flux_ratio_data/{:s}_OI6300_fit_data.dat'.format(folder)
-    OIII_file   = output_directory + 'flux_ratio_data/{:s}_OIII5007_fit_data.dat'.format(folder)
-    Halpha_file = output_directory + 'flux_ratio_data/{:s}_Halpha_fit_data.dat'.format(folder)
-    Hbeta_file  = output_directory + 'flux_ratio_data/{:s}_Hbeta_fit_data.dat'.format(folder)
-    NII_file    = output_directory + 'flux_ratio_data/{:s}_NII6584_fit_data.dat'.format(folder)
-    SII_file    = output_directory + 'flux_ratio_data/{:s}_SII_fit_data.dat'.format(folder)
-    SII_a_file  = output_directory + 'flux_ratio_data/{:s}_SII_a_fit_data.dat'.format(folder)
-    SII_b_file  = output_directory + 'flux_ratio_data/{:s}_SII_b_fit_data.dat'.format(folder)
+    OI_file     = output_directory + f'flux_ratio_data/{folder}_OI6300_fit_data.dat'
+    OIII_file   = output_directory + f'flux_ratio_data/{folder}_OIII5007_fit_data.dat'
+    Halpha_file = output_directory + f'flux_ratio_data/{folder}_Halpha_fit_data.dat'
+    Hbeta_file  = output_directory + f'flux_ratio_data/{folder}_Hbeta_fit_data.dat'
+    NII_file    = output_directory + f'flux_ratio_data/{folder}_NII6584_fit_data.dat'
+    SII_file    = output_directory + f'flux_ratio_data/{folder}_SII_fit_data.dat'
+    SII_a_file  = output_directory + f'flux_ratio_data/{folder}_SII_a_fit_data.dat'
+    SII_b_file  = output_directory + f'flux_ratio_data/{folder}_SII_b_fit_data.dat'
 
     # Create skip list:
     ## The skip list contains bad fits that are supposed to be cleared. The number refers to apxx. 
